@@ -27,7 +27,7 @@ function reset() {
     $( "#losses" ).html( "<h2>Losses: " + losses + "</h2>" );
 }
 
-$("#randomNumber").text(randomNum);
+
 $("#crystal1").on("click", function() {
     totalNum = totalNum + crys1;
     $( "#totalScore" ).html( "<h1>Current Count: " + totalNum + "</h1>" );
