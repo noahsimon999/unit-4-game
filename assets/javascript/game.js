@@ -34,11 +34,11 @@ $("#crystal1").on("click", function() {
     if (totalNum === randomNum) {
         wins ++;
         $( "#wins" ).html( "<h2>Wins: " + wins + "</h2>" );
-        reset();
+        setTimeout(reset, 100);
     } else if (totalNum > randomNum) {
         losses++;
         $( "#losses" ).html( "<h2>Losses: " + losses + "</h2>" );
-        reset();
+        setTimeout(reset, 100);
     }
 });
 $("#crystal2").on("click", function() {
@@ -47,11 +47,11 @@ $("#crystal2").on("click", function() {
     if (totalNum === randomNum) {
         wins ++;
         $( "#wins" ).html( "<h2>Wins: " + wins + "</h2>" );
-        reset();
+        setTimeout(reset, 100);
     } else if (totalNum > randomNum) {
         losses++;
         $( "#losses" ).html( "<h2>Losses: " + losses + "</h2>" );
-        reset();
+        setTimeout(reset, 100);
     }
 });
 $("#crystal3").on("click", function() {
@@ -60,11 +60,11 @@ $("#crystal3").on("click", function() {
     if (totalNum === randomNum) {
         wins ++;
         $( "#wins" ).html( "<h2>Wins: " + wins + "</h2>" );
-        reset();
+        setTimeout(reset, 100);
     } else if (totalNum > randomNum) {
         losses++;
         $( "#losses" ).html( "<h2>Losses: " + losses + "</h2>" );
-        reset();
+        setTimeout(reset, 100);
     }
 });
 $("#crystal4").on("click", function() {
@@ -73,11 +73,11 @@ $("#crystal4").on("click", function() {
     if (totalNum === randomNum) {
         wins ++;
         $( "#wins" ).html( "<h2>Wins: " + wins + "</h2>" );
-        reset();
+        setTimeout(reset, 100);
     } else if (totalNum > randomNum) {
         losses++;
         $( "#losses" ).html( "<h2>Losses: " + losses + "</h2>" );
-        reset();
+        setTimeout(reset, 100);
     }
 });
 
