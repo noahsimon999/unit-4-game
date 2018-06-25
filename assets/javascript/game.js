@@ -12,6 +12,7 @@ $(document).ready(function() {
     var losses = 0;
     var coin = new Audio("assets/soundEffects/coin.wav");
     var winner = new Audio("assets/soundEffects/winnerCoins.wav");
+    var loser = new Audio("assets/soundEffects/loserCoins.wav");
     $( "#randomNumber" ).html( "<h1>Target Price: $" + randomNum + "</h1>" );
     $( "#totalScore" ).html( "<h1>Current Price: $" + totalNum + "</h1>" );
     $( "#wins" ).html( "<h2>Wins: " + wins + "</h2>" );
@@ -48,6 +49,7 @@ $(document).ready(function() {
             $( "#wins" ).html( "<h2>Wins: " + wins + "</h2>" );
             setTimeout(reset, 100);
         } else if (totalNum > randomNum) {
+            loser.play();
             losses++;
             $( "#losses" ).html( "<h2>Losses: " + losses + "</h2>" );
             setTimeout(reset, 100);
@@ -63,6 +65,7 @@ $(document).ready(function() {
             $( "#wins" ).html( "<h2>Wins: " + wins + "</h2>" );
             setTimeout(reset, 100);
         } else if (totalNum > randomNum) {
+            loser.play();
             losses++;
             $( "#losses" ).html( "<h2>Losses: " + losses + "</h2>" );
             setTimeout(reset, 100);
@@ -78,6 +81,7 @@ $(document).ready(function() {
             $( "#wins" ).html( "<h2>Wins: " + wins + "</h2>" );
             setTimeout(reset, 100);
         } else if (totalNum > randomNum) {
+            loser.play();
             losses++;
             $( "#losses" ).html( "<h2>Losses: " + losses + "</h2>" );
             setTimeout(reset, 100);
@@ -93,6 +97,7 @@ $(document).ready(function() {
             $( "#wins" ).html( "<h2>Wins: " + wins + "</h2>" );
             setTimeout(reset, 100);
         } else if (totalNum > randomNum) {
+            loser.play();
             losses++;
             $( "#losses" ).html( "<h2>Losses: " + losses + "</h2>" );
             setTimeout(reset, 100);
