@@ -42,7 +42,6 @@ $(document).ready(function() {
     $("#crystal1").on("click", function() {
         totalNum = totalNum + crys1;
         coin.play();
-        $("#crystal1").addClass(".swing");
         $( "#totalScore" ).html( "<h1>Current Price: $" + totalNum + "</h1>" );
         if (totalNum === randomNum) {
             winner.play();
